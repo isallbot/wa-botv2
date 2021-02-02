@@ -43,7 +43,7 @@ const vcard = 'BEGIN:VCARD\n'
 prefix = '!'
 blocked = []   
 limitawal = 20
-memberlimit = 2
+memberlimit = 5
 cr = '*ʙoт-ιsᴀʟʟ 𝐕𝐄𝐑𝐈𝐅𝐈𝐄𝐃*'
 
 /*
@@ -1715,22 +1715,7 @@ break
 				case 'info':
 					me = client.user
 					uptime = process.uptime()
-					teks = `*➸ Nama bot* : ${me.name}\n*➸ OWNER* : *ISALL GANS*\n*➸ AUTHOR* : FAISAL WAPI\n*➸ Nomor Bot* : @${me.jid.split('@')[0]}\n*➸ Prefix* : ${prefix}\n*➸ Total Block Contact* : ${blocked.length}\n*➸ The bot is active on* : ${kyun(uptime)}` \n➸♻️ JANGAN  LUPA DONASI AGAR BOT AKTIF TERUS!
-♻️ MAU DONASI? SILAHKAN KETIK !donate
-
-📺 *Iklan* : ( MAU PASANG SEWA BOT CP OWNER AE )
-
-✅ Follow akun instagram admin https://www.instagram.com/faisall_wapi/
-
-♻️ _TETAP JAGA KESEHATAN DAN SELALU PAKAI MASKER!_
-
-♻️ OWNER *FAISAL WAPI ?*
-☎️ WA : wa.me/6289630267618
-  
-⚠️ Gunakan dengan bijak ‼️
-⚠️ Bot ini berjalan *KALO ADA PAKET YAA TOLOL:v* ‼️
-👥 GROUP 1 : https://chat.whatsapp.com/HXoDilHy4TsJghPDltH2VL
-
+					teks = `*➸ Nama bot* : ${me.name}\n*➸ OWNER* : *ISALL GANS*\n*➸ AUTHOR* : FAISAL WAPI\n*➸ Nomor Bot* : @${me.jid.split('@')[0]}\n*➸ Prefix* : ${prefix}\n*➸ Total Block Contact* : ${blocked.length}\n*➸ The bot is active on* : ${kyun(uptime)}\n*➸ LINK GRUP * : https://chat.whatsapp.com/HXoDilHy4TsJghPDltH2VL
 					buffer = await getBuffer(me.imgUrl)
 					client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
