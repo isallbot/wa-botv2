@@ -1715,7 +1715,7 @@ break
 				case 'info':
 					me = client.user
 					uptime = process.uptime()
-					teks = `*➸ Nama bot* : ${me.name}\n*➸ OWNER* : *ISALL GANS*\n*➸ AUTHOR* : FAISAL WAPI\n*➸ Nomor Bot* : @${me.jid.split('@')[0]}\n*➸ Prefix* : ${prefix}\n*➸ Total Block Contact* : ${blocked.length}\n*➸ The bot is active on* : ${kyun(uptime)}\n*➸ LINK GRUP * : https://chat.whatsapp.com/HXoDilHy4TsJghPDltH2VL
+					teks = `*➸ Nama bot* : ${me.name}\n*➸ OWNER* : *ISALL GANS*\n*➸ AUTHOR* : FAISAL WAPI\n*➸ Nomor Bot* : @${me.jid.split('@')[0]}\n*➸ Prefix* : ${prefix}\n*➸ Total Block Contact* : ${blocked.length}\n*➸ The bot is active on* : ${kyun(uptime)}
 					buffer = await getBuffer(me.imgUrl)
 					client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
