@@ -1734,7 +1734,7 @@ break
                     const latensi = speed() - timestamp
                     client.updatePresence(from, Presence.composing) 
 				uptime = process.uptime()
-                    client.sendMessage(from, `➸ Speed: *${latensi.toFixed(4)} _Second_*\n➸ Device: *MI A1*\n➸ RAM: *4/64*\n➸ Data: *TRI*\n➸ Jaringan: *4G*\n➸ Status: *Not Charger*\n➸ Bot Type: *Termux*\n\n*➸ Bot Telah Aktif Selama*\n*${kyun(uptime)}*`, text, { quoted: mek})
+                    client.sendMessage(from, `➸ Speed: *${latensi.toFixed(4)} _Second_*\n➸ Device: *Redmi Note 8 Pro*\n➸ RAM: *6/128*\n➸ Data: *Indosat Ooredoo*\n➸ Jaringan: *4G*\n➸ Status: *Not Charger*\n➸ Bot Type: *Termux*\n\n*➸ Bot Telah Aktif Selama*\n*${kyun(uptime)}*`, text, { quoted: mek})
                     break
 /*
 ]=====> MAKER MENU <=====[
