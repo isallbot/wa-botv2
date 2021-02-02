@@ -1723,7 +1723,7 @@ break
             case 'owner':
             case 'creator':
                   client.sendMessage(from, {displayname: "Jeff", vcard: vcard}, MessageType.contact, { quoted: mek})
-                  client.sendMessage(from, 'Tuh Nomor DOI >_<, Ehh Ownerku mksdnya:v',MessageType.text, { quoted: mek} )
+                  client.sendMessage(from, 'Tuh Nomor Pacarku >_<, Ehh Ownerku mksdnya:v',MessageType.text, { quoted: mek} )
 					break
                 case 'speed':
                 case 'ping':
