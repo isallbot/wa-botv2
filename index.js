@@ -503,7 +503,7 @@ switch(command) {
 				case 'menu':
 				if (isBanned) return reply(ind.baned())
 				if (!isRegistered) return reply(ind.noregis())
-				    const reqXp  = 6000 * (Math.pow(2, getLevelingLevel(sender)) - 1)
+				    const reqXp  = 5000 * (Math.pow(2, getLevelingLevel(sender)) - 1)
 				    const uangku = checkATMuser(sender)
 					await costum(help(pushname, prefix, botName, ownerName, reqXp, getLevelingLevel, sender, _registered, uangku), text, tescuk, cr)
 					break
@@ -1715,15 +1715,30 @@ break
 				case 'info':
 					me = client.user
 					uptime = process.uptime()
-					teks = `*➸ Nama bot* : ${me.name}\n*➸ OWNER* : *FAISAL WAPI*\n*➸ AUTHOR* : RAMLAN\n*➸ Nomor Bot* : @${me.jid.split('@')[0]}\n*➸ Prefix* : ${prefix}\n*➸ Total Block Contact* : ${blocked.length}\n*➸ The bot is active on* : ${kyun(uptime)}`
+					teks = `*➸ Nama bot* : ${me.name}\n*➸ OWNER* : *ISALL GANS*\n*➸ AUTHOR* : FAISAL WAPI\n*➸ Nomor Bot* : @${me.jid.split('@')[0]}\n*➸ Prefix* : ${prefix}\n*➸ Total Block Contact* : ${blocked.length}\n*➸ The bot is active on* : ${kyun(uptime)}` \n➸♻️ JANGAN  LUPA DONASI AGAR BOT AKTIF TERUS!
+♻️ MAU DONASI? SILAHKAN KETIK !donate
+
+📺 *Iklan* : ( MAU PASANG SEWA BOT CP OWNER AE )
+
+✅ Follow akun instagram admin https://www.instagram.com/faisall_wapi/
+
+♻️ _TETAP JAGA KESEHATAN DAN SELALU PAKAI MASKER!_
+
+♻️ OWNER *FAISAL WAPI ?*
+☎️ WA : wa.me/6289630267618
+  
+⚠️ Gunakan dengan bijak ‼️
+⚠️ Bot ini berjalan *KALO ADA PAKET YAA TOLOL:v* ‼️
+👥 GROUP 1 : https://chat.whatsapp.com/HXoDilHy4TsJghPDltH2VL
+
 					buffer = await getBuffer(me.imgUrl)
 					client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
             case 'admin':
             case 'owner':
             case 'creator':
-                  client.sendMessage(from, {displayname: "Jeff", vcard: vcard}, MessageType.contact, { quoted: mek})
-                  client.sendMessage(from, 'Tuh Nomor Pacarku >_<, Ehh Ownerku mksdnya:v',MessageType.text, { quoted: mek} )
+                  client.sendMessage(from, {displayname: "FAISAL WAPI", vcard: vcard}, MessageType.contact, { quoted: mek})
+                  client.sendMessage(from, 'Tuh Nomor DOI >_<, Ehh Ownerku mksdnya:v',MessageType.text, { quoted: mek} )
 					break
                 case 'speed':
                 case 'ping':
