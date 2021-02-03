@@ -1735,7 +1735,7 @@ break
 					if (args.length < 1) return reply(ind.wrongf())
 					har = body.slice(12)
 					reply('[❗] Hirti Tihti Tai Anjg :v')
-					buffer = await getBuffer(`https://api.zeks.xyz/api/hartatahta?text=${har}&apikey=apivinz`)
+					buffer = await getBuffer(`https://api.zeks.xyz/api/hartatahta?text=${har}&apikey=apivinz`  {method: 'get'})
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					await limitAdd(sender)
 					break
