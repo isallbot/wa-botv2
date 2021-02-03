@@ -24,6 +24,7 @@ Berikut adalah fitur yang ada pada bot ini!✨
 ┃│➸ *${prefix}setprefix*
 ┃│➸ *${prefix}ban*
 ┃│➸ *${prefix}unban*
+┃│➸ *${prefix}indohot*
 ┃╰───────────────────
 ┗━━━━━━━━━━━━━━━━━━━━┛
 🔰 -----[ *POWERED BY ${ownerName}* ]----- 🔰`
