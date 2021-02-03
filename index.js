@@ -273,7 +273,7 @@ client.logger.level = 'warn'
 console.log(banner.string)
    client.on('qr', qr => {
    qrcode.generate(qr, { small: true })
-	console.log(color('[','white'), color('!','red'), color(']','white'), color(' SUBSCRIBE YT ISALL GANS'))
+	console.log(color('[','white'), color('!','red'), color(']','white'), color(' SUBSCRIBE YT RAMLAN CHANNEL'))
 })
 
 client.on('credentials-updated', () => {
@@ -631,8 +631,8 @@ if (!isRegistered) return reply(ind.noregis())
 if (isLimit(sender)) return reply(ind.limitend(pusname))
 if (args.length < 1) return reply('Yang mau di tulis apaan? titit?')
 ramlan = body.slice(7)
-reply('[❗] WAIT BRO GUE NULIS DULU YAKAN')
-buff = await getBuffer(`https://mhankbarbar.tech/nulis?text=${ramlan}&apikey=${BarBarKey}`)
+reply('[❗] WAIT BRO GUE NULIS DUMLU YAKAN')
+buff = await getBuffer(`https://api.vhtear.com/write?text=${ramlan}&apikey=${vhtear}`)
 client.sendMessage(from, buff, image, {quoted: mek, caption: 'Nulis sendiri gblok:v'})
 await limitAdd(sender)
 break					
@@ -643,7 +643,7 @@ if (isLimit(sender)) return reply(ind.limitend(pusname))
 quotes = body.slice(1)
 const quo =['Lebih baik mengerti sedikit daripada salah mengerti.','Hampir semua pria memang mampu bertahan menghadapi kesulitan. Namun, jika Anda ingin menguji karakter sejati pria, beri dia kekuasaan.','Bila tekad seseorang kuat dan teguh, Tuhan akan bergabung dalam usahanya.','Penderitaan adalah pelajaran.','Ilmu pengetahuan tanpa agama adalah pincang.','Hidup itu seperti sebuah sepeda, agar tetap seimbang kita harus tetap bergerak.','Perbedaan masa lalu, sekarang, dan masa depan tak lebih dari ilusi yang keras kepala.','Sebuah meja, sebuah kursi, semangkuk buah, dan sebuah biola; apa lagi yang dibutuhkan agar seseorang bisa merasa bahagia?','Belas kasihanlah terhadap sesama, bersikap keraslah terhadap diri sendiri.','Cara paling baik untuk menggerakkan diri Anda ialah memberi tugas kepada diri sendiri.','Kita tidak boleh kehilangan semangat. Semangat adalah stimulan terkuat untuk mencintai, berkreasi dan berkeinginan untuk hidup lebih lama.','Manusia akan bahagia selama ia memilih untuk bahagia.','Saya tidak berharap menjadi segalanya bagi setiap orang. Saya hanya ingin menjadi sesuatu untuk seseorang.','Apabila sempurna akal seseorang, maka sedikit perkataannya.','Bahagialah orang yang dapat menjadi tuan untuk dirinya, menjadi kusir untuk nafsunya dan menjadi kapten untuk bahtera hidupnya.','Sahabat yang jujur lebih besar harganya daripada harta benda yang diwarisi dari nenek moyang.','Yang paling melelahkan dalam hidup adalah menjadi orang yang tidak tulus.','Terbuka untuk Anda, begitulah Tuhan memberi kita jalan untuk berusaha. Jangan pernah berfikir jalan sudah tertutup.','Penundaan adalah kuburan dimana peluang dikuburkan.','Cinta bukan saling menatap mata, namun melihat ke arah yang sama bersama-sama.','Kita adalah apa yang kita kerjakan berulang kali. Dengan demikian, kecemerlangan bukan tindakan, tetapi kebiasaan.','Jangan pernah mencoba menjadikan putra atau putri Anda menjadi seperti Anda. Diri Anda hanya cukup satu saja.','Jika Anda bisa membuat orang lain tertawa, maka Anda akan mendapatkan semua cinta yang Anda inginkan.','Masalah akan datang cepat atau lambat. Jika masalah datang, sambut dengan sebaik mungkin. Semakin ramah Anda menyapanya, semakin cepat ia pergi.','Kita tak bisa melakukan apapun untuk mengubah masa lalu. Tapi apapun yang kita lakukan bisa mengubah masa depan.','Kesabaran adalah teman dari kebijaksanaan.','Orang-orang kreatif termotivasi oleh keinginan untuk maju, bukan oleh keinginan untuk mengalahkan orang lain.','Dimanapun engkau berada selalulah menjadi yang terbaik dan berikan yang terbaik dari yang bisa kita berikan.','Kebencian seperti halnya cinta, berkobar karena hal-hal kecil.','Anda tidak perlu harus berhasil pada kali pertama.','Satu jam yang intensif, jauh lebih baik dan menguntungkan daripada bertahun-tahun bermimpi dan merenung-renung.','Hal terbaik yang bisa Anda lakukan untuk orang lain bukanlah membagikan kekayaan Anda, tetapi membantu dia untuk memiliki kekayaannya sendiri.','Tidak ada jaminan keberhasilan, tetapi tidak berusaha adalah jaminan kegagalan.','Aku tidak tahu kunci sukses itu apa, tapi kunci menuju kegagalan adalah mencoba membuat semua orang senang.']
 const tes = quo[Math.floor(Math.random() * quo.length)]
-client.sendMessage(from, ''+tes+'\n\n_By : FAISAL WAPI._', text, { quoted: mek })
+client.sendMessage(from, ''+tes+'\n\n_By : ⸸Ramlan⸸Panutanque._', text, { quoted: mek })
 await limitAdd(sender)
 break
 				case 'tts':
@@ -725,7 +725,7 @@ break
                    if (!isRegistered) return reply(ind.noregis())
                    if (isLimit(sender)) return reply(ind.limitend(pusname))
                      teks = body.slice(9)
-                     hmm = await fetchJson(`https://mhankbarbar.tech/api/stalk?username=${teks}&apikey=${BarBarKey}`, {method: 'get'})
+                     hmm = await fetchJson(`https://api.vhtear.com/igprofile?query=${teks}&apikey=${VhtearKey}`, {method: 'get'})
                      reply('[❗] Sabar Lagi Stalking IG nya kak')
                      buffer = await getBuffer(hmm.data.picture)
                      hasil = `YAHAHA TELAH DI STALK BOS KU UNTUK USERNAME ${teks} \n\n *Username?* : _${hmm.data.result.username}_ \n *Nama??* : _${hmm.data.result.full_name}_ \n *Jumlah Follower??﹦?* : _${hmm.data.result.follower}_ \n *Jumlah Following?* : _${hmm.data.result.follow}_ \n *Jumlah Post?* : _${hmm.data.result.post_count}_ \n *Biografi?? :* _${hmm.data.result.biography}`
@@ -1089,7 +1089,7 @@ break
                 const userLevel = getLevelingLevel(sender)
                 const userXp = getLevelingXp(sender)
                 if (userLevel === undefined && userXp === undefined) return reply(ind.lvlnul())
-                const requiredXp = 3000 * (Math.pow(2, userLevel) - 1)
+                const requiredXp = 5000 * (Math.pow(2, userLevel) - 1)
                 resul = `┏━━━━━━♡ *LEVEL* ♡━━━━━━━┓\n┃╭───────────────────\n┃│➸ NAMA : ${pushname}\n┃│➸ NOMOR : wa.me/${sender.split("@")[0]}\n┃│➸ XP : ${userXp}/${requiredXp}\n┃│➸ LEVEL : ${userLevel}\n┃╰───────────────────\n┗━━━━━━━━━━━━━━━━━━━━┛`
                client.sendMessage(from, resul, text, { quoted: mek})
                 .catch(async (err) => {
@@ -1290,7 +1290,7 @@ break
 				if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
 					if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply('URL NYA TIDAK VALID KAK')				
-					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/ytv?url=${args[0]}=${TobzKey}`, {method: 'get'})
+					anu = await fetchJson(`https://api.vhtear.com/ytdl?link=${args[0]}=${VhtearKey}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
 					teks = `*➸ JUDUL* : ${anu.result.title}\n\n*[WAIT] Proses Dumlu Yakan*`
 					thumb = await getBuffer(anu.result.imgUrl)
@@ -1305,7 +1305,7 @@ break
 				if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
 					if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply('URL NYA TIDAK VALID KAK')
-					anu = await fetchJson(`https://mhankbarbar.tech/api/tiktok?url=${args[0]}&APIKEY=${BarBarKey}`, {method: 'get'})
+					anu = await fetchJson(`https://api.xteam.xyz/tiktokv2?url=${args[0]}&APIKEY=xteamapi`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
 					teks = `*❏ CAPTION* : ${anu.caption}\n\n*[WAIT] Proses Dumlu Yakan*`
 					thumb = await getBuffer(anu.cover)
@@ -1319,7 +1319,7 @@ break
 				if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname)) 
                 reply(ind.wait())
-                anu = await fetchJson(`https://tobz-api.herokuapp.com/api/yta?url=${body.slice(6)}&apikey=${TobzKey}`)
+                anu = await fetchJson(`https://api.vhtear.com/ytmp3?query=${body.slice(6)}&apikey=${VhtearKey}`)
                if (anu.error) return reply(anu.error)
                  infomp3 = `*[❗] Lagu Ditemukan*\n➸ Judul : ${anu.result.title}\n➸ Durasi : ${anu.result.duration}\n➸ Size : ${anu.result.size}\n\n*[WAIT] Proses Dumlu Yakan*`
                 buffer = await getBuffer(anu.result.image)
@@ -1360,7 +1360,7 @@ break
                   if (isBanned) return reply(ind.baned())				
 				if (!isRegistered) return reply(ind.noregis())
 				payout = body.slice(10)
-				const koinPerlimit = 500
+				const koinPerlimit = 800
 				const total = koinPerlimit * payout
 				if ( checkATMuser(sender) <= total) return reply(`maaf kak uang nya gak cukup, kumpulin uang nya dumlu >_< jangan open bo kak:v`)
 				if ( checkATMuser(sender) >= total ) {
@@ -1436,7 +1436,7 @@ break
                    if (!isNsfw) return reply(ind.nsfwoff())
 					gatauda = body.slice(10)
 					reply(ind.wait())
-					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/nekonime?apikey=${TobzKey}`, {method: 'get'})
+					anu = await fetchJson(`https://api.vhtear.com/randomnekonime&apikey=${VhtearKey}`, {method: 'get'})
 					buffer = await getBuffer(anu.result.result)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					await limitAdd(sender)
@@ -1485,7 +1485,7 @@ break
                    if (!isNsfw) return reply(ind.nsfwoff())
 					gatauda = body.slice(6)
 					reply(ind.wait())
-					anu = await fetchJson(`https://api.vhtear.com/randomloli&apikey=${TobzKey}`, {method: 'get'})
+					anu = await fetchJson(`https://api.vhtear.com/randomloli&apikey=${VhtearKey}`, {method: 'get'})
 					buffer = await getBuffer(anu.result.result)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					await limitAdd(sender)
@@ -1498,7 +1498,7 @@ break
                    if (!isNsfw) return reply(ind.nsfwoff())
 					gatauda = body.slice(15)
 					reply(ind.wait())
-					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/hentai?apikey=${TobzKey}`, {method: 'get'})
+					anu = await fetchJson(`https://api.vhtear.com/randomhentai?apikey=${VhtearKey}`, {method: 'get'})
 					buffer = await getBuffer(anu.result.url)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					await limitAdd(sender)
@@ -1509,7 +1509,7 @@ break
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
                    if (!isGroup) return reply(ind.groupo())
                    if (!isNsfw) return reply(ind.nsfwoff())
-						data = await fetchJson(`https://tobz-api.herokuapp.com/api/waifu?${TobzKey}`)
+						data = await fetchJson(`https://api.vhtear.com/randomwibu&apikey=${VhtearKey}`)
 						buffer = await getBuffer(data.result.foto)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: '>_<'})
 					await limitAdd(sender)
@@ -1559,7 +1559,7 @@ break
                       if (isLimit(sender)) return reply(ind.limitend(pushname))
                       if (!isEventon) return reply(`maaf ${pushname} event mining tidak di aktifkan sama owner Ramlan`)
                       if (isOwner) {
-                      const one = 999999999
+                      const one = 500
                       addLevelingXp(sender, one)
                       addLevelingLevel(sender, 99)
                       reply(`karena ISALL baik Bot memberikan ${one}Xp >_<`)
@@ -1715,7 +1715,7 @@ break
 				case 'info':
 					me = client.user
 					uptime = process.uptime()
-					teks = `*➸ Nama bot* : ${me.name}\n*➸ OWNER* : *ISALL GANS*\n*➸ AUTHOR* : FAISAL WAPI\n*➸ Nomor Bot* : @${me.jid.split('@')[0]}\n*➸ Prefix* : ${prefix}\n*➸ Total Block Contact* : ${blocked.length}\n*➸ The bot is active on* : ${kyun(uptime)}
+					teks = `*➸ Nama bot* : ${me.name}\n*➸ OWNER* : *FAISAL WAPI*\n*➸ AUTHOR* : RAMLAN\n*➸ Nomor Bot* : @${me.jid.split('@')[0]}\n*➸ Prefix* : ${prefix}\n*➸ Total Block Contact* : ${blocked.length}\n*➸ The bot is active on* : ${kyun(uptime)}`
 					buffer = await getBuffer(me.imgUrl)
 					client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
@@ -1725,6 +1725,17 @@ break
                   client.sendMessage(from, {displayname: "Jeff", vcard: vcard}, MessageType.contact, { quoted: mek})
                   client.sendMessage(from, 'Tuh Nomor Pacarku >_<, Ehh Ownerku mksdnya:v',MessageType.text, { quoted: mek} )
 					break
+                case 'speed':
+                case 'ping':
+                  if (isBanned) return reply(ind.baned())
+				if (!isRegistered) return reply(ind.noregis())
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+                    const timestamp = speed();
+                    const latensi = speed() - timestamp
+                    client.updatePresence(from, Presence.composing) 
+				uptime = process.uptime()
+                    client.sendMessage(from, `➸ Speed: *${latensi.toFixed(4)} _Second_*\n➸ Device: *Redmi Note 8 Pro*\n➸ RAM: *6/128*\n➸ Data: *Indosat Ooredoo*\n➸ Jaringan: *4G*\n➸ Status: *Not Charger*\n➸ Bot Type: *Termux*\n\n*➸ Bot Telah Aktif Selama*\n*${kyun(uptime)}*`, text, { quoted: mek})
+                    break
 /*
 ]=====> MAKER MENU <=====[
 */
@@ -1735,7 +1746,7 @@ break
 					if (args.length < 1) return reply(ind.wrongf())
 					har = body.slice(12)
 					reply('[❗] Hirti Tihti Tai Anjg :v')
-					buffer = await getBuffer(`https://api.zeks.xyz/api/hartatahta?text=${har}&apikey=apivinz`  {method: 'get'})
+					buffer = await getBuffer(`https://api.vhtear.com/hartatahta?text=${har}&apikey=${VhtearKey}`)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					await limitAdd(sender)
 					break
@@ -1767,7 +1778,7 @@ break
 ]=====> OWNER MENU <=====[
 */
 case 'bc':
-							if (!isOwner) return reply('*SIAPA LU AJING OWNER BUKAN?*') 
+							if (!isOwner) return reply('*Lu Saha Tod?*') 
 					if (args.length < 1) return reply('.......')
 					anu = await rahmad.chats.all()
 					if (isMedia && !mek.message.videoMessage || isQuotedImage) {
@@ -1890,7 +1901,7 @@ case 'bc':
 */					
                 case 'indohot':
 				 client.updatePresence(from, Presence.composing)
-					if (!isOwner) return reply('FITUR KHUSUS ISALL')				
+					if (!isOwner) return reply('FITUR KHUSUS RAMLAN')				
 				 data = fs.readFileSync('./src/18+.json');
                  jsonData = JSON.parse(data);
                  randIndex = Math.floor(Math.random() * jsonData.length);
