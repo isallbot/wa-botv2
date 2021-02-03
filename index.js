@@ -1725,17 +1725,6 @@ break
                   client.sendMessage(from, {displayname: "Jeff", vcard: vcard}, MessageType.contact, { quoted: mek})
                   client.sendMessage(from, 'Tuh Nomor Pacarku >_<, Ehh Ownerku mksdnya:v',MessageType.text, { quoted: mek} )
 					break
-                case 'speed':
-                case 'ping':
-                  if (isBanned) return reply(ind.baned())
-				if (!isRegistered) return reply(ind.noregis())
-				if (isLimit(sender)) return reply(ind.limitend(pusname))
-                    const timestamp = speed();
-                    const latensi = speed() - timestamp
-                    client.updatePresence(from, Presence.composing) 
-				uptime = process.uptime()
-                    client.sendMessage(from, `➸ Speed: *${latensi.toFixed(4)} _Second_*\n➸ Device: *Redmi Note 8 Pro*\n➸ RAM: *6/128*\n➸ Data: *Indosat Ooredoo*\n➸ Jaringan: *4G*\n➸ Status: *Not Charger*\n➸ Bot Type: *Termux*\n\n*➸ Bot Telah Aktif Selama*\n*${kyun(uptime)}*`, text, { quoted: mek})
-                    break
 /*
 ]=====> MAKER MENU <=====[
 */
@@ -1745,8 +1734,8 @@ break
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
 					if (args.length < 1) return reply(ind.wrongf())
 					har = body.slice(12)
-					reply('[❗] Hirti Tihti Tai Anjg ( EROR ) :v')
-					buffer = await getBuffer(`https://api.vhtear.com/hartatahta?text=${har}&apikey=${VhtearKey}`)
+					reply('[❗] Hirti Tihti Tai Anjg :v')
+					buffer = await getBuffer(`https://api.zeks.xyz/api/hartatahta?text=${har}&apikey=apivinz`)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					await limitAdd(sender)
 					break
@@ -1778,7 +1767,7 @@ break
 ]=====> OWNER MENU <=====[
 */
 case 'bc':
-							if (!isOwner) return reply('*SIAPA LU ANJING OWNER BUKAN?*') 
+							if (!isOwner) return reply('*SIAPA LU AJING OWNER BUKAN?*') 
 					if (args.length < 1) return reply('.......')
 					anu = await rahmad.chats.all()
 					if (isMedia && !mek.message.videoMessage || isQuotedImage) {
