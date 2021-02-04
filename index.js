@@ -52,7 +52,7 @@ cr = '*BOT-ISALL VERIFIED*'
 ]=====> SETTINGS <=====[
 */
 const ownerNumber = ["6289630267618@s.whatsapp.net","6289653464328@s.whatsapp.net"]
-const botName = 'BOT L-ISALL'
+const botName = 'BOT-ISALL'
 const ownerName = 'FAISAL WAPI'
 const BarBarKey = 'Nkwp9oR7Eg9yyKbejBpm'
 const VhtearKey = 'vhtear key'
@@ -281,7 +281,7 @@ console.log(banner.string)
 client.on('credentials-updated', () => {
 	const authInfo = client.base64EncodedAuthInfo()
    console.log(`credentials updated!`)
-   fs.writeFileSync('./BOT-ISALL.json', JSON.stringify(authInfo, null, '\t'))
+   fs.writeFileSync('./ISALL.json', JSON.stringify(authInfo, null, '\t'))
 })
 fs.existsSync('./ISALL.json') && client.loadAuthInfo('./ISALL.json')
 client.connect();
@@ -632,7 +632,7 @@ if (isBanned) return reply(ind.baned())
 if (!isRegistered) return reply(ind.noregis())
 if (isLimit(sender)) return reply(ind.limitend(pusname))
 if (args.length < 1) return reply('Yang mau di tulis apaan? titit?')
-BOT-ISALL = body.slice(7)
+ramlan = body.slice(7)
 reply('[❗] WAIT BRO GUE NULIS DUMLU YAKAN')
 buff = await getBuffer(`https://api.vhtear.com/write?text=${BOT-ISALL}&apikey=${vhtear}`)
 client.sendMessage(from, buff, image, {quoted: mek, caption: 'Nulis sendiri gblok:v'})
@@ -1349,7 +1349,7 @@ break
                 hasiltf = jumblah - fee
                 addKoinUser(tujuantf, hasiltf)
                 confirmATM(sender, jumblah)
-                addKoinUser('6285559240360@s.whatsapp.net', fee)
+                addKoinUser('6289630267618@s.whatsapp.net', fee)
                 reply(`*⟪ SUKSES ⟫*\n\npengiriman uang berhasil\n➸ dari : +${sender.split("@")[0]}\n➸ ke : +${tujuan}\n➸ jumlah transfer : ${jumblah}\n➸ pajak : ${fee}`)
                 break
 				case 'atm':
