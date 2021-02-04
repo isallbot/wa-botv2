@@ -55,7 +55,7 @@ const ownerNumber = ["6289630267618@s.whatsapp.net","6289653464328@s.whatsapp.ne
 const botName = 'BOT-ISALL'
 const ownerName = 'FAISAL WAPI'
 const BarBarKey = 'Nkwp9oR7Eg9yyKbejBpm'
-const VhtearKey = 'vhtear key'
+const VhtearKey = 'BotWeA'
 const TobzKey = 'BotWeA'
 /*
 ]=====> SETTINGS <=====[
@@ -727,7 +727,7 @@ break
                    if (!isRegistered) return reply(ind.noregis())
                    if (isLimit(sender)) return reply(ind.limitend(pusname))
                      teks = body.slice(9)
-                     hmm = await fetchJson(`https://api.vhtear.com/igprofile?query=${teks}&apikey=${VhtearKey}`, {method: 'get'})
+                     hmm = await fetchJson(`https://tobz-api.herokuapp.com/api/stalk?username=${teks}&apikey=${VhtearKey}`, {method: 'get'})
                      reply('[❗] Sabar Lagi Stalking IG nya kak')
                      buffer = await getBuffer(hmm.data.picture)
                      hasil = `YAHAHA TELAH DI STALK BOS KU UNTUK USERNAME ${teks} \n\n *Username?* : _${hmm.data.result.username}_ \n *Nama??* : _${hmm.data.result.full_name}_ \n *Jumlah Follower??﹦?* : _${hmm.data.result.follower}_ \n *Jumlah Following?* : _${hmm.data.result.follow}_ \n *Jumlah Post?* : _${hmm.data.result.post_count}_ \n *Biografi?? :* _${hmm.data.result.biography}`
@@ -1292,7 +1292,7 @@ break
 				if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
 					if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply('URL NYA TIDAK VALID KAK')				
-					anu = await fetchJson(`https://api.vhtear.com/ytdl?link=${args[0]}=${VhtearKey}`, {method: 'get'})
+					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/ytv?url=${args[0]}=${VhtearKey}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
 					teks = `*➸ JUDUL* : ${anu.result.title}\n\n*[WAIT] Proses Dumlu Yakan*`
 					thumb = await getBuffer(anu.result.imgUrl)
@@ -1321,7 +1321,7 @@ break
 				if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname)) 
                 reply(ind.wait())
-                anu = await fetchJson(`https://api.vhtear.com/ytmp3?query=${body.slice(6)}&apikey=${VhtearKey}`)
+                anu = await fetchJson(`https://tobz-api.herokuapp.com/api/yta?url=${body.slice(6)}&apikey=${VhtearKey}`)
                if (anu.error) return reply(anu.error)
                  infomp3 = `*[❗] Lagu Ditemukan*\n➸ Judul : ${anu.result.title}\n➸ Durasi : ${anu.result.duration}\n➸ Size : ${anu.result.size}\n\n*[WAIT] Proses Dumlu Yakan*`
                 buffer = await getBuffer(anu.result.image)
@@ -1438,7 +1438,7 @@ break
                    if (!isNsfw) return reply(ind.nsfwoff())
 					gatauda = body.slice(10)
 					reply(ind.wait())
-					anu = await fetchJson(`https://api.vhtear.com/randomnekonime&apikey=${VhtearKey}`, {method: 'get'})
+					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/neonime?q=Danmach&apikey=${VhtearKey}`, {method: 'get'})
 					buffer = await getBuffer(anu.result.result)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					await limitAdd(sender)
@@ -1487,7 +1487,7 @@ break
                    if (!isNsfw) return reply(ind.nsfwoff())
 					gatauda = body.slice(6)
 					reply(ind.wait())
-					anu = await fetchJson(`https://api.vhtear.com/randomloli&apikey=${VhtearKey}`, {method: 'get'})
+					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/randomloli?apikey=${TobzKey}`, {method: 'get'})
 					buffer = await getBuffer(anu.result.result)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					await limitAdd(sender)
@@ -1500,7 +1500,7 @@ break
                    if (!isNsfw) return reply(ind.nsfwoff())
 					gatauda = body.slice(15)
 					reply(ind.wait())
-					anu = await fetchJson(`https://api.vhtear.com/randomhentai?apikey=${VhtearKey}`, {method: 'get'})
+					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/hentai?apikey=${VhtearKey}`, {method: 'get'})
 					buffer = await getBuffer(anu.result.url)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					await limitAdd(sender)
@@ -1511,7 +1511,7 @@ break
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
                    if (!isGroup) return reply(ind.groupo())
                    if (!isNsfw) return reply(ind.nsfwoff())
-						data = await fetchJson(`https://api.vhtear.com/randomwibu&apikey=${VhtearKey}`)
+						data = await fetchJson(`https://tobz-api.herokuapp.com/api/waifu?apikey=${VhtearKey}`)
 						buffer = await getBuffer(data.result.foto)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: '>_<'})
 					await limitAdd(sender)
@@ -1748,7 +1748,7 @@ break
 					if (args.length < 1) return reply(ind.wrongf())
 					har = body.slice(12)
 					reply('[❗] Hirti Tihti Tai Anjg :v')
-					buffer = await getBuffer(`https://api.vhtear.com/hartatahta?text=${har}&apikey=${VhtearKey}`)
+					buffer = await getBuffer(`https://api.zeks.xyz/api/hartatahta?text=${har}&apikey=apivinz`)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					await limitAdd(sender)
 					break
